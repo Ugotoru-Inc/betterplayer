@@ -798,7 +798,7 @@ class BetterPlayerController {
     }
 
     final int now = DateTime.now().millisecondsSinceEpoch;
-    if (now - _lastPositionSelection > 500) {
+    if (now - _lastPositionSelection > 33) {
       _lastPositionSelection = now;
       _postEvent(
         BetterPlayerEvent(
